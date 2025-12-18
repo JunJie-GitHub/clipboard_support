@@ -53,12 +53,10 @@ https://[你的用户名].github.io/clipboard_support/
 
 在部署前，请更新以下文件中的联系邮箱：
 
-1. **support.html** (第 101-102 行)
-   - 将 `support@example.com` 替换为你的实际支持邮箱
+1. **support.html** 
 
-2. **privacy.html** (第 178 行)
-   - 将 `privacy@example.com` 替换为你的实际隐私政策联系邮箱
-
+2. **privacy.html**
+   
 ### 自定义内容
 
 你可以根据实际需求修改：
