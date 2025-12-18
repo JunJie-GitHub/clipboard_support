@@ -1,6 +1,6 @@
-# 剪贴板助手 - 官方网站
+# Clipboard Safe - 官方网站
 
-这是剪贴板助手（Clipboard Assistant）Mac应用的官方支持网站，包含营销页面、技术支持和隐私政策。
+这是Clipboard Safe（Clipboard Assistant）Mac应用的官方支持网站，包含营销页面、技术支持和隐私政策。
 
 ## 网站结构
 
@@ -94,7 +94,7 @@ https://[你的用户名].github.io/clipboard_support/
 
 ## 许可证
 
-本项目供剪贴板助手应用使用。
+本项目供Clipboard Safe应用使用。
 
 ## 维护
 
