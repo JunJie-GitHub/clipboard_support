@@ -31,17 +31,30 @@
 
 ## GitHub Pages 部署
 
-### 启用 GitHub Pages
+本仓库使用 GitHub Actions 自动部署到 GitHub Pages。
+
+### 自动部署
+
+每次推送到 `main` 分支时，GitHub Actions 工作流（`.github/workflows/static.yml`）会自动运行并部署网站到 GitHub Pages。
+
+### 首次启用 GitHub Pages
 
 1. 进入仓库的 Settings
 2. 找到 "Pages" 设置
-3. 在 "Source" 部分选择要部署的分支（通常是 `main` 或 `master`）
+3. 在 "Source" 部分选择 **"GitHub Actions"**（重要：不是 "Deploy from a branch"）
 4. 保存设置
 
 几分钟后，你的网站将在以下地址可用：
 ```
 https://[你的用户名].github.io/clipboard_support/
 ```
+
+### 手动触发部署
+
+你也可以在 GitHub Actions 页面手动触发部署：
+1. 进入仓库的 Actions 标签
+2. 选择 "Deploy static content to Pages" 工作流
+3. 点击 "Run workflow" 按钮
 
 ### 自定义域名（可选）
 
