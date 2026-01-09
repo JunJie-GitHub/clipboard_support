@@ -75,11 +75,6 @@ const translations = {
         faq2_question: '❓ Why do I need Accessibility permissions?',
         faq2_answer: 'Accessibility permission is only needed for pasting clipboard content to other apps. When you click on clipboard history to paste, the app writes the content to the system clipboard and simulates Command+V to paste it into the foreground app. This permission is requested on-demand when you try to paste. The app does not use accessibility to monitor keyboard events like Command+C.',
         
-        faq3_question: '❓ How do I switch save modes?',
-        faq3_answer: 'In the app settings, you can choose:',
-        faq3_mode1: '<strong>Command+C automatic save:</strong> Every copy is automatically saved to history',
-        faq3_mode2: '<strong>Command+C+C manual save:</strong> After pressing Command + C to copy, press C one more time to save',
-        
         faq4_question: '❓ How do I search history?',
         faq4_answer: 'Click the app icon to open the history panel, then enter keywords in the search box for quick lookup. Supports full-text search to help you quickly find what you need.',
         
@@ -94,7 +89,7 @@ const translations = {
         faq6_item4: 'Data is encrypted and stored locally',
         
         faq7_question: '❓ How do I uninstall the app?',
-        faq7_answer: 'Drag the app from the Applications folder to the Trash. All local data will be deleted with the app.',
+        faq7_answer: 'Drag the app from the Applications folder to the Trash.',
         
         support_requirements_title: 'System Requirements',
         req_os: '<strong>Operating System:</strong> macOS 14.0 or higher',
@@ -125,7 +120,7 @@ const translations = {
         trouble2_step3: 'Ensure Clipboard Safe is checked and enabled',
         trouble2_step4: 'If already checked, try unchecking and rechecking. Note: Clipboard content reading does not require accessibility permissions',
         
-        trouble3_title: '�� Shortcuts not working',
+        trouble3_title: '🔧 Shortcuts not working',
         trouble3_solution: '<strong>Solution:</strong>',
         trouble3_step1: 'Confirm Accessibility permissions have been granted correctly',
         trouble3_step2: 'Check if other apps are using the same shortcuts',
@@ -244,13 +239,13 @@ const translations = {
         
         privacy_section15_title: '15. Privacy Policy Summary',
         privacy_section15_intro: '<strong>In short, this app\'s commitment to your privacy is:</strong>',
-        privacy_section15_item1: '✅ <strong>Zero Data Collection:</strong> We do not collect any user data',
-        privacy_section15_item2: '✅ <strong>Completely Local:</strong> All data is saved only on your Mac',
-        privacy_section15_item3: '✅ <strong>Completely Offline:</strong> The app does not require a network connection and does not communicate with any servers',
-        privacy_section15_item4: '✅ <strong>No Data Sharing:</strong> Does not share data with any third parties',
-        privacy_section15_item5: '✅ <strong>Local Encryption:</strong> Local data is encrypted for protection',
-        privacy_section15_item6: '✅ <strong>You Have Control:</strong> You can view and delete your data at any time',
-        privacy_section15_item7: '✅ <strong>Transparent Permission Use:</strong> Accessibility permission is only used for paste functionality, requested on-demand, not used for other purposes',
+        privacy_section15_item1: '✔ <strong>Zero Data Collection:</strong> We do not collect any user data',
+        privacy_section15_item2: '✔ <strong>Completely Local:</strong> All data is saved only on your Mac',
+        privacy_section15_item3: '✔ <strong>Completely Offline:</strong> The app does not require a network connection and does not communicate with any servers',
+        privacy_section15_item4: '✔ <strong>No Data Sharing:</strong> Does not share data with any third parties',
+        privacy_section15_item5: '✔ <strong>Local Encryption:</strong> Local data is encrypted for protection',
+        privacy_section15_item6: '✔ <strong>You Have Control:</strong> You can view and delete your data at any time',
+        privacy_section15_item7: '✔ <strong>Transparent Permission Use:</strong> Accessibility permission is only used for paste functionality, requested on-demand, not used for other purposes',
         privacy_section15_note: '<strong>Your privacy is our top priority.</strong> We have prioritized privacy protection from the very beginning, ensuring that your clipboard content never leaves your device.'
     },
     zh: {
@@ -326,11 +321,6 @@ const translations = {
         faq2_question: '❓ 为什么需要辅助功能权限？',
         faq2_answer: '辅助功能权限仅在粘贴剪贴板内容到其他应用时需要。当您点击剪贴板历史记录粘贴时，应用会将内容写入系统剪贴板，并模拟 Command+V 将其粘贴到前台应用。该权限在您尝试粘贴时按需请求。应用不会使用辅助功能监听键盘事件（如 Command+C）。',
         
-        faq3_question: '❓ 如何切换保存模式？',
-        faq3_answer: '在应用设置中，您可以选择：',
-        faq3_mode1: '<strong>Command+C 自动保存：</strong>每次复制都会自动保存到历史记录',
-        faq3_mode2: '<strong>Command+C+C 主动保存：</strong>按 Command + C 复制键后，还需要按一次 C 才会保存',
-        
         faq4_question: '❓ 如何搜索历史记录？',
         faq4_answer: '点击应用图标打开历史记录面板，在搜索框中输入关键词即可快速查找。支持全文搜索，帮助您快速找到需要的内容。',
         
@@ -345,7 +335,7 @@ const translations = {
         faq6_item4: '数据本地加密存储',
         
         faq7_question: '❓ 如何卸载应用？',
-        faq7_answer: '将应用从 应用程序 文件夹拖到废纸篓即可。所有本地数据会随应用一起删除。',
+        faq7_answer: '将应用从 应用程序 文件夹拖到废纸篓即可。',
         
         support_requirements_title: '系统要求',
         req_os: '<strong>操作系统：</strong>macOS 14.0 或更高版本',
@@ -495,13 +485,13 @@ const translations = {
         
         privacy_section15_title: '15. 隐私政策摘要',
         privacy_section15_intro: '<strong>简而言之，本应用对您的隐私的承诺是：</strong>',
-        privacy_section15_item1: '✅ <strong>零数据收集：</strong>我们不收集任何用户数据',
-        privacy_section15_item2: '✅ <strong>完全本地：</strong>所有数据仅保存在您的 Mac 上',
-        privacy_section15_item3: '✅ <strong>完全离线：</strong>应用不需要网络连接，不与任何服务器通信',
-        privacy_section15_item4: '✅ <strong>不共享数据：</strong>不与任何第三方共享数据',
-        privacy_section15_item5: '✅ <strong>本地加密：</strong>本地数据经过加密保护',
-        privacy_section15_item6: '✅ <strong>您拥有控制权：</strong>您可以随时查看、删除您的数据',
-        privacy_section15_item7: '✅ <strong>透明使用权限：</strong>辅助功能权限仅用于粘贴功能，按需申请，不做其他用途',
+        privacy_section15_item1: '✔ <strong>零数据收集：</strong>我们不收集任何用户数据',
+        privacy_section15_item2: '✔ <strong>完全本地：</strong>所有数据仅保存在您的 Mac 上',
+        privacy_section15_item3: '✔ <strong>完全离线：</strong>应用不需要网络连接，不与任何服务器通信',
+        privacy_section15_item4: '✔ <strong>不共享数据：</strong>不与任何第三方共享数据',
+        privacy_section15_item5: '✔ <strong>本地加密：</strong>本地数据经过加密保护',
+        privacy_section15_item6: '✔ <strong>您拥有控制权：</strong>您可以随时查看、删除您的数据',
+        privacy_section15_item7: '✔ <strong>透明使用权限：</strong>辅助功能权限仅用于粘贴功能，按需申请，不做其他用途',
         privacy_section15_note: '<strong>您的隐私是我们的首要任务。</strong>我们从设计之初就将隐私保护放在第一位，确保您的剪贴板内容永远不会离开您的设备。'
     }
 };

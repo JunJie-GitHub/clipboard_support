@@ -559,6 +559,13 @@ body {
     border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
+.summary-box p,
+.summary-box ul,
+.summary-box li,
+.summary-box strong {
+    color: white;
+}
+
 .summary-intro {
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
