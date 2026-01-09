@@ -35,12 +35,12 @@
                 
                 <div class="faq-item">
                     <h3 data-i18n="faq1_question">❓ How do I start using Clipboard Safe?</h3>
-                    <p data-i18n="faq1_answer">After launching the app for the first time, the system will prompt you to grant Accessibility permissions. This is necessary to monitor the clipboard. Please go to "System Preferences" > "Security & Privacy" > "Privacy" > "Accessibility" and check Clipboard Safe.</p>
+                    <p data-i18n="faq1_answer">Simply launch the app and start copying! Clipboard Safe will automatically save your copied content. No special permissions are needed for reading clipboard content. Accessibility permission is only requested when you try to paste content from the app.</p>
                 </div>
 
                 <div class="faq-item">
                     <h3 data-i18n="faq2_question">❓ Why do I need Accessibility permissions?</h3>
-                    <p data-i18n="faq2_answer">Clipboard Safe requires Accessibility permissions to monitor your copy operations (Command+C+C or Command+C) to automatically save clipboard content. This is a necessary permission for the app's core functionality. Rest assured, we do not collect or upload any data; all content is saved only locally on your Mac.</p>
+                    <p data-i18n="faq2_answer">Accessibility permission is only needed for pasting clipboard content to other apps. When you click on clipboard history to paste, the app writes the content to the system clipboard and simulates Command+V to paste it into the foreground app. This permission is requested on-demand when you try to paste. The app does not use accessibility to monitor keyboard events like Command+C.</p>
                 </div>
 
                 <div class="faq-item">
@@ -85,7 +85,7 @@
                     <ul>
                         <li data-i18n="req_os"><strong>Operating System:</strong> macOS 14.0 or higher</li>
                         <li data-i18n="req_arch"><strong>Architecture:</strong> Supports Intel and Apple Silicon (M1/M2/M3) chips</li>
-                        <li data-i18n="req_permissions"><strong>Permissions:</strong> Accessibility permissions</li>
+                        <li data-i18n="req_permissions"><strong>Permissions:</strong> Accessibility permissions (only for paste functionality)</li>
                         <li data-i18n="req_disk"><strong>Disk Space:</strong> Minimum 10 MB</li>
                     </ul>
                 </div>
@@ -127,13 +127,13 @@
                 </div>
 
                 <div class="troubleshooting-item">
-                    <h3 data-i18n="trouble2_title">🔧 Cannot save clipboard content</h3>
+                    <h3 data-i18n="trouble2_title">🔧 Cannot paste clipboard content</h3>
                     <p data-i18n="trouble2_solution"><strong>Solution:</strong></p>
                     <ol>
-                        <li data-i18n="trouble2_step1">Check if Accessibility permissions have been granted</li>
+                        <li data-i18n="trouble2_step1">Pasting requires Accessibility permissions. When you try to paste, the app will prompt you to enable this permission</li>
                         <li data-i18n="trouble2_step2">Go to "System Preferences" > "Security & Privacy" > "Privacy" > "Accessibility"</li>
                         <li data-i18n="trouble2_step3">Ensure Clipboard Safe is checked and enabled</li>
-                        <li data-i18n="trouble2_step4">If already checked, try unchecking and rechecking</li>
+                        <li data-i18n="trouble2_step4">If already checked, try unchecking and rechecking. Note: Clipboard content reading does not require accessibility permissions</li>
                     </ol>
                 </div>
 
