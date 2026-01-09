@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clipboard Safe - 智能剪贴板管理工具</title>
+    <title data-i18n="page_title_home">Clipboard Safe - Intelligent Clipboard Manager</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="i18n.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -13,9 +14,9 @@
                 <h1>Clipboard Safe</h1>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="active">首页</a></li>
-                <li><a href="support.html">技术支持</a></li>
-                <li><a href="privacy.html">隐私政策</a></li>
+                <li><a href="index.html" class="active" data-i18n="nav_home">Home</a></li>
+                <li><a href="support.html" data-i18n="nav_support">Support</a></li>
+                <li><a href="privacy.html" data-i18n="nav_privacy">Privacy Policy</a></li>
             </ul>
         </div>
     </nav>
@@ -24,11 +25,11 @@
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">Clipboard Safe</h1>
-                <p class="hero-subtitle">为 Mac 打造的智能剪贴板管理工具</p>
-                <p class="hero-description">让你的复制粘贴工作流更高效、更便捷</p>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">Intelligent Clipboard Manager for Mac</p>
+                <p class="hero-description" data-i18n="hero_description">Make your copy-paste workflow more efficient and convenient</p>
                 <div class="hero-buttons">
-                    <a href="#features" class="btn btn-primary">了解更多</a>
-                    <a href="support.html" class="btn btn-secondary">获取支持</a>
+                    <a href="#features" class="btn btn-primary" data-i18n="btn_learn_more">Learn More</a>
+                    <a href="support.html" class="btn btn-secondary" data-i18n="btn_get_support">Get Support</a>
                 </div>
             </div>
         </div>
@@ -36,50 +37,50 @@
 
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">核心功能</h2>
+            <h2 class="section-title" data-i18n="section_features">Core Features</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">💾</div>
-                    <h3>自动剪贴板管理</h3>
-                    <p>自动保存你所有复制的内容，无需额外操作</p>
-                    <p>随时回看历史记录，再也不用担心复制内容丢失</p>
+                    <h3 data-i18n="feature1_title">Automatic Clipboard Management</h3>
+                    <p data-i18n="feature1_desc1">Automatically save all your copied content without extra operations</p>
+                    <p data-i18n="feature1_desc2">Review history anytime, never worry about losing copied content</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🔍</div>
-                    <h3>快速搜索</h3>
-                    <p>一键快速访问历史记录</p>
-                    <p>智能搜索功能，快速找到你需要的内容</p>
+                    <h3 data-i18n="feature2_title">Quick Search</h3>
+                    <p data-i18n="feature2_desc1">One-click quick access to history</p>
+                    <p data-i18n="feature2_desc2">Smart search to quickly find what you need</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">⌨️</div>
-                    <h3>多种复制触发方式</h3>
-                    <p>支持 Command+C 自动保存</p>
-                    <p>或使用 Command+C+C 主动保存</p>
-                    <p>满足用户的不同使用习惯</p>
+                    <h3 data-i18n="feature3_title">Multiple Copy Trigger Modes</h3>
+                    <p data-i18n="feature3_desc1">Support Command+C automatic save</p>
+                    <p data-i18n="feature3_desc2">Or use Command+C+C for manual save</p>
+                    <p data-i18n="feature3_desc3">Meet different user habits</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">📊</div>
-                    <h3>历史记录上限可调</h3>
-                    <p>根据你的需求设置保存数量</p>
-                    <p>从 20 到 2000 条全由你掌控</p>
+                    <h3 data-i18n="feature4_title">Adjustable History Limit</h3>
+                    <p data-i18n="feature4_desc1">Set the number of saved items according to your needs</p>
+                    <p data-i18n="feature4_desc2">From 20 to 2000 entries, you're in control</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
-                    <h3>注重隐私保护</h3>
-                    <p>所有数据仅保存在你的 Mac 上</p>
-                    <p>应用完全离线运行，无需联网</p>
-                    <p>绝不收集或上传任何剪贴板内容</p>
+                    <h3 data-i18n="feature5_title">Privacy Protection</h3>
+                    <p data-i18n="feature5_desc1">All data saved only on your Mac</p>
+                    <p data-i18n="feature5_desc2">App runs completely offline, no internet required</p>
+                    <p data-i18n="feature5_desc3">Never collect or upload any clipboard content</p>
                 </div>
 
                 <div class="feature-card">
                     <div class="feature-icon">🛡️</div>
-                    <h3>安全可靠</h3>
-                    <p>数据本地加密保障安全</p>
-                    <p>从设计之初就将隐私放在首位</p>
+                    <h3 data-i18n="feature6_title">Secure and Reliable</h3>
+                    <p data-i18n="feature6_desc1">Local data encryption for security</p>
+                    <p data-i18n="feature6_desc2">Privacy first from the very beginning</p>
                 </div>
             </div>
         </div>
@@ -87,30 +88,29 @@
 
     <section class="privacy-highlight">
         <div class="container">
-            <h2 class="section-title">隐私第一</h2>
+            <h2 class="section-title" data-i18n="section_privacy_first">Privacy First</h2>
             <div class="privacy-content">
-                <p class="privacy-text">
-                    Clipboard Safe从设计之初就将隐私放在首位。我们深知剪贴板内容的敏感性，
-                    因此采取了多重措施确保你的数据安全：
+                <p class="privacy-text" data-i18n="privacy_intro">
+                    Clipboard Safe prioritizes privacy from the very beginning. We understand the sensitivity of clipboard content and have taken multiple measures to ensure your data security:
                 </p>
                 <ul class="privacy-list">
-                    <li><strong>本地存储：</strong>所有数据仅保存在你的 Mac 上，永不离开你的设备</li>
-                    <li><strong>无需联网：</strong>应用完全离线运行，不会连接任何服务器</li>
-                    <li><strong>零数据收集：</strong>绝不收集或上传任何剪贴板内容</li>
-                    <li><strong>本地加密：</strong>数据本地加密保障安全</li>
+                    <li data-i18n="privacy_item1"><strong>Local Storage:</strong> All data is saved only on your Mac and never leaves your device</li>
+                    <li data-i18n="privacy_item2"><strong>No Internet Required:</strong> App runs completely offline, never connects to any servers</li>
+                    <li data-i18n="privacy_item3"><strong>Zero Data Collection:</strong> Never collect or upload any clipboard content</li>
+                    <li data-i18n="privacy_item4"><strong>Local Encryption:</strong> Data is encrypted locally for security</li>
                 </ul>
-                <a href="privacy.html" class="btn btn-outline">查看完整隐私政策</a>
+                <a href="privacy.html" class="btn btn-outline" data-i18n="btn_view_privacy">View Full Privacy Policy</a>
             </div>
         </div>
     </section>
 
     <section class="cta">
         <div class="container">
-            <h2>准备好提升你的效率了吗？</h2>
-            <p>在 Mac App Store 下载Clipboard Safe，开启高效工作之旅</p>
+            <h2 data-i18n="cta_title">Ready to Boost Your Productivity?</h2>
+            <p data-i18n="cta_description">Download Clipboard Safe from the Mac App Store and start your efficient workflow</p>
             <div class="cta-buttons">
-                <a href="support.html" class="btn btn-primary">获取技术支持</a>
-                <a href="privacy.html" class="btn btn-secondary">了解隐私政策</a>
+                <a href="support.html" class="btn btn-primary" data-i18n="btn_get_tech_support">Get Technical Support</a>
+                <a href="privacy.html" class="btn btn-secondary" data-i18n="btn_learn_privacy">Learn About Privacy Policy</a>
             </div>
         </div>
     </section>
@@ -119,11 +119,11 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-links">
-                    <a href="index.html">首页</a>
-                    <a href="support.html">技术支持</a>
-                    <a href="privacy.html">隐私政策</a>
+                    <a href="index.html" data-i18n="nav_home">Home</a>
+                    <a href="support.html" data-i18n="nav_support">Support</a>
+                    <a href="privacy.html" data-i18n="nav_privacy">Privacy Policy</a>
                 </div>
-                <p class="footer-copyright">© 2025 Clipboard Safe. 保留所有权利.</p>
+                <p class="footer-copyright" data-i18n="footer_copyright">© 2025 Clipboard Safe. All rights reserved.</p>
             </div>
         </div>
     </footer>
