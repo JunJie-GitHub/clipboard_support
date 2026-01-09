@@ -139,7 +139,119 @@ const translations = {
         // Privacy page
         page_title_privacy: 'Privacy Policy - Clipboard Safe',
         page_header_privacy: 'Privacy Policy',
-        privacy_update_date: 'Last updated: January 9, 2026'
+        privacy_update_date: 'Last updated: January 9, 2026',
+        
+        // Privacy sections
+        privacy_section1_title: '1. Introduction',
+        privacy_section1_p1: 'Welcome to Clipboard Safe (hereinafter referred to as "this app", "we"). We take your privacy and data security very seriously. This privacy policy details how this app handles your information and the measures we take to protect your privacy.',
+        privacy_section1_p2: 'By using this app, you agree to the terms of this privacy policy. If you do not agree with this policy, please do not use this app.',
+        
+        privacy_section2_title: '2. Information Collection',
+        privacy_section2_1_title: '2.1 Information We Do Not Collect',
+        privacy_section2_1_p: '<strong>This app adopts a fully localized design philosophy and does not collect, transmit, or store any user data to remote servers.</strong> Specifically:',
+        privacy_section2_1_item1: '<strong>Clipboard Content:</strong> We do not collect, upload, or transmit any content you copy to the clipboard',
+        privacy_section2_1_item2: '<strong>Personal Information:</strong> We do not collect your name, email address, phone number, or other personal identification information',
+        privacy_section2_1_item3: '<strong>Device Information:</strong> We do not collect your device identifiers, hardware model, operating system version, or other device information',
+        privacy_section2_1_item4: '<strong>Usage Data:</strong> We do not collect analytics data or statistics about how you use this app',
+        privacy_section2_1_item5: '<strong>Location Information:</strong> We do not collect or access your geographic location information',
+        privacy_section2_1_item6: '<strong>Contacts and Communications:</strong> We do not access your contacts or any communication information',
+        
+        privacy_section2_2_title: '2.2 Local Data Storage',
+        privacy_section2_2_p1: 'This app only stores the following information locally on your Mac device:',
+        privacy_section2_2_item1: '<strong>Clipboard History:</strong> Content you copy is saved in a local database, stored only on your device',
+        privacy_section2_2_item2: '<strong>App Settings:</strong> Your personal preferences (such as history limit, trigger mode, etc.) are saved in local configuration files',
+        privacy_section2_2_p2: '<strong>All this data is stored only on your device, never leaves your Mac, and is not uploaded to any server.</strong>',
+        
+        privacy_section3_title: '3. Permission Explanation',
+        privacy_section3_1_title: '3.1 Accessibility Permission',
+        privacy_section3_1_p1: 'This app requires macOS Accessibility permission for specific functions. This permission is used for:',
+        privacy_section3_1_item1: '<strong>Pasting Clipboard Content:</strong> When you click on clipboard history content and want to paste it into the foreground app, this app needs to simulate Command+V keyboard events to implement paste functionality. This is because the clipboard cannot directly "inject" content into other apps; it can only make the foreground app respond to paste operations by simulating keyboard events',
+        privacy_section3_1_p2: '<strong>Important Notes:</strong>',
+        privacy_section3_1_item2: '<strong>On-Demand Request:</strong> We only request Accessibility permission when you need to use the paste function. When you try to click clipboard content to paste into a foreground app, if Accessibility is not yet enabled, the app will prompt you to enable this permission',
+        privacy_section3_1_item3: '<strong>Paste Process:</strong> The paste operation consists of two steps: (1) Write the selected content to the system clipboard; (2) Simulate pressing Command+V shortcut to make the foreground app respond to paste',
+        privacy_section3_1_item4: '<strong>Does Not Monitor Keyboard Events:</strong> This app does not use Accessibility to monitor your keyboard operations (such as Command+C), nor does it monitor any operations you perform in other apps',
+        privacy_section3_1_item5: 'Accessibility permission is only used to implement paste functionality and will not be used to monitor other apps or collect any other information',
+        privacy_section3_1_item6: 'All data obtained through this permission is only processed and stored locally and will not be transmitted anywhere',
+        privacy_section3_1_item7: 'You can revoke this permission at any time in "System Preferences" > "Security & Privacy" > "Privacy" > "Accessibility". After revocation, paste functionality will be unavailable, but you can still view clipboard history',
+        
+        privacy_section3_2_title: '3.2 No Network Connection Required',
+        privacy_section3_2_p1: 'This app runs completely offline and does not require an internet connection. The app will not:',
+        privacy_section3_2_item1: 'Send data to any server',
+        privacy_section3_2_item2: 'Download content from the internet',
+        privacy_section3_2_item3: 'Communicate with any third-party services',
+        
+        privacy_section4_title: '4. Data Use',
+        privacy_section4_p: 'Since we do not collect any user data, there is no issue of data use. All data you generate while using this app:',
+        privacy_section4_item1: 'Is saved only on your local device',
+        privacy_section4_item2: 'Is used only for app functionality',
+        privacy_section4_item3: 'Is completely controlled and managed by you',
+        privacy_section4_item4: 'Can be deleted by you at any time',
+        
+        privacy_section5_title: '5. Data Security',
+        privacy_section5_p: 'We take the following measures to protect your data security:',
+        privacy_section5_item1: '<strong>Local Encryption:</strong> All clipboard history saved locally is encrypted',
+        privacy_section5_item2: '<strong>No Network Transmission:</strong> The app does not connect to the internet, so there is no risk of data being intercepted during transmission',
+        privacy_section5_item3: '<strong>No Third-Party Access:</strong> Does not use any third-party services or SDKs, your data will not be accessed by third parties',
+        privacy_section5_item4: '<strong>Sandbox Protection:</strong> The app runs in the macOS sandbox environment, complying with Apple\'s security standards',
+        
+        privacy_section6_title: '6. Data Sharing and Disclosure',
+        privacy_section6_p1: '<strong>We will not share, sell, rent, or exchange any of your data with any third party.</strong>',
+        privacy_section6_p2: 'Since this app does not collect any user data, there is no data sharing or disclosure. All your data always remains on your device, completely under your control.',
+        
+        privacy_section7_title: '7. Third-Party Services',
+        privacy_section7_p: 'This app does not integrate any third-party services, analytics tools, advertising networks, or social media plugins. The app operates completely independently and does not depend on any external services.',
+        
+        privacy_section8_title: '8. Children\'s Privacy',
+        privacy_section8_p: 'This app is suitable for users of all ages. Since we do not collect any personal information, we do not knowingly collect personal information from children under 13. Parents and guardians can safely allow children to use this app.',
+        
+        privacy_section9_title: '9. Data Retention and Deletion',
+        privacy_section9_1_title: '9.1 Data Retention',
+        privacy_section9_1_item1: 'Clipboard history is saved according to the quantity limit you specify in settings (20-2000 entries)',
+        privacy_section9_1_item2: 'When the limit is reached, the oldest records are automatically deleted',
+        privacy_section9_1_item3: 'All data is stored only on your local device',
+        
+        privacy_section9_2_title: '9.2 Deleting Data',
+        privacy_section9_2_p: 'You can delete data saved by the app at any time:',
+        privacy_section9_2_item1: '<strong>Delete Single Record:</strong> Delete specific items from the history list',
+        privacy_section9_2_item2: '<strong>Clear All Records:</strong> Use the "Clear History" function in app settings',
+        privacy_section9_2_item3: '<strong>Complete Deletion:</strong> Uninstalling the app will automatically delete all locally stored data',
+        
+        privacy_section10_title: '10. Your Rights',
+        privacy_section10_p: 'Since all data is stored on your local device, you have complete control:',
+        privacy_section10_item1: '<strong>Right of Access:</strong> You can view all saved clipboard history at any time',
+        privacy_section10_item2: '<strong>Right to Modify:</strong> Although the app is primarily for viewing history, you can delete unwanted content',
+        privacy_section10_item3: '<strong>Right to Delete:</strong> You can delete some or all history at any time',
+        privacy_section10_item4: '<strong>Right to Control:</strong> You can revoke the app\'s Accessibility permission through system settings. After revocation, paste functionality will be unavailable, but you can still view clipboard history',
+        
+        privacy_section11_title: '11. Changes to Privacy Policy',
+        privacy_section11_p1: 'We may update this privacy policy from time to time. For significant changes, we will notify you through in-app notifications or app update notes. We recommend that you review this page regularly to stay informed of any changes.',
+        privacy_section11_p2: 'The last update date of this privacy policy is shown at the top of the page. Continued use of this app indicates your acceptance of the updated privacy policy.',
+        
+        privacy_section12_title: '12. International Users',
+        privacy_section12_p: 'Since this app does not collect or transmit any data, there is no issue of cross-border data transfer. Wherever you are, your data always remains on your device.',
+        
+        privacy_section13_title: '13. Compliance Statement',
+        privacy_section13_p: 'The design and operation of this app comply with the following privacy and data protection regulations:',
+        privacy_section13_item1: '<strong>Apple App Store Review Guidelines:</strong> Strictly complies with Apple\'s privacy and security requirements',
+        privacy_section13_item2: '<strong>GDPR (General Data Protection Regulation):</strong> Although we do not collect data, our practices are in line with GDPR\'s privacy protection spirit',
+        privacy_section13_item3: '<strong>CCPA (California Consumer Privacy Act):</strong> Fully complies with data privacy requirements',
+        
+        privacy_section14_title: '14. Contact Us',
+        privacy_section14_p1: 'If you have any questions, comments, or requests regarding this privacy policy, please contact us through the following:',
+        privacy_section14_email: '<strong>Email:</strong> smilejie2020@foxmail.com',
+        privacy_section14_support: '<strong>Technical Support:</strong> <a href="support.html">Visit Technical Support Page</a>',
+        privacy_section14_p2: 'We will respond to your inquiries as soon as possible, typically within 24-48 hours.',
+        
+        privacy_section15_title: '15. Privacy Policy Summary',
+        privacy_section15_intro: '<strong>In short, this app\'s commitment to your privacy is:</strong>',
+        privacy_section15_item1: '✅ <strong>Zero Data Collection:</strong> We do not collect any user data',
+        privacy_section15_item2: '✅ <strong>Completely Local:</strong> All data is saved only on your Mac',
+        privacy_section15_item3: '✅ <strong>Completely Offline:</strong> The app does not require a network connection and does not communicate with any servers',
+        privacy_section15_item4: '✅ <strong>No Data Sharing:</strong> Does not share data with any third parties',
+        privacy_section15_item5: '✅ <strong>Local Encryption:</strong> Local data is encrypted for protection',
+        privacy_section15_item6: '✅ <strong>You Have Control:</strong> You can view and delete your data at any time',
+        privacy_section15_item7: '✅ <strong>Transparent Permission Use:</strong> Accessibility permission is only used for paste functionality, requested on-demand, not used for other purposes',
+        privacy_section15_note: '<strong>Your privacy is our top priority.</strong> We have prioritized privacy protection from the very beginning, ensuring that your clipboard content never leaves your device.'
     },
     zh: {
         // Navigation
@@ -278,7 +390,119 @@ const translations = {
         // Privacy page
         page_title_privacy: '隐私政策 - Clipboard Safe',
         page_header_privacy: '隐私政策',
-        privacy_update_date: '最后更新日期：2026年1月9日'
+        privacy_update_date: '最后更新日期：2026年1月9日',
+        
+        // Privacy sections
+        privacy_section1_title: '1. 引言',
+        privacy_section1_p1: '欢迎使用 Clipboard Safe（以下简称"本应用"、"我们"）。我们非常重视您的隐私和数据安全。本隐私政策详细说明了本应用如何处理您的信息以及我们采取的保护措施。',
+        privacy_section1_p2: '使用本应用即表示您同意本隐私政策的条款。如果您不同意本政策，请不要使用本应用。',
+        
+        privacy_section2_title: '2. 信息收集',
+        privacy_section2_1_title: '2.1 我们不收集的信息',
+        privacy_section2_1_p: '<strong>本应用采用完全本地化的设计理念，不会收集、传输或存储任何用户数据到远程服务器。</strong>具体而言：',
+        privacy_section2_1_item1: '<strong>剪贴板内容：</strong>我们不会收集、上传或传输任何您复制到剪贴板的内容',
+        privacy_section2_1_item2: '<strong>个人身份信息：</strong>我们不收集您的姓名、电子邮件地址、电话号码或其他个人识别信息',
+        privacy_section2_1_item3: '<strong>设备信息：</strong>我们不收集您的设备标识符、硬件型号、操作系统版本或其他设备信息',
+        privacy_section2_1_item4: '<strong>使用数据：</strong>我们不收集您如何使用本应用的分析数据或统计信息',
+        privacy_section2_1_item5: '<strong>位置信息：</strong>我们不收集或访问您的地理位置信息',
+        privacy_section2_1_item6: '<strong>联系人和通讯信息：</strong>我们不访问您的通讯录或任何通讯信息',
+        
+        privacy_section2_2_title: '2.2 本地数据存储',
+        privacy_section2_2_p1: '本应用仅在您的 Mac 设备上本地存储以下信息：',
+        privacy_section2_2_item1: '<strong>剪贴板历史记录：</strong>您复制的内容保存在本地数据库中，仅存储在您的设备上',
+        privacy_section2_2_item2: '<strong>应用设置：</strong>您的个人偏好设置（如历史记录上限、触发方式等）保存在本地配置文件中',
+        privacy_section2_2_p2: '<strong>所有这些数据仅存储在您的设备上，永不离开您的 Mac，也不会被上传到任何服务器。</strong>',
+        
+        privacy_section3_title: '3. 权限说明',
+        privacy_section3_1_title: '3.1 辅助功能权限',
+        privacy_section3_1_p1: '本应用在特定功能下需要请求 macOS 的辅助功能（Accessibility）权限。该权限用于：',
+        privacy_section3_1_item1: '<strong>粘贴剪贴板内容：</strong>当您点击剪贴板历史记录中的内容并希望粘贴到前台应用时，本应用需要通过模拟 Command+V 键盘事件来实现粘贴功能。这是因为剪贴板无法直接将内容"注入"到其他应用中，只能通过模拟键盘事件让前台应用响应粘贴操作',
+        privacy_section3_1_p2: '<strong>重要说明：</strong>',
+        privacy_section3_1_item2: '<strong>按需申请：</strong>我们会在您需要使用粘贴功能时才申请辅助功能权限。当您尝试点击剪贴板内容粘贴到前台应用时，如果尚未开启辅助功能，应用会提示您开启该权限',
+        privacy_section3_1_item3: '<strong>粘贴流程：</strong>粘贴操作分为两步：(1) 将您选中的内容写入系统剪贴板；(2) 模拟按下 Command+V 快捷键，让前台应用响应粘贴',
+        privacy_section3_1_item4: '<strong>不监听键盘事件：</strong>本应用不使用辅助功能来监听您的键盘操作（如 Command+C），也不会监控您在其他应用中的任何操作',
+        privacy_section3_1_item5: '辅助功能权限仅用于实现粘贴功能，不会被用于监控其他应用或收集您的任何其他信息',
+        privacy_section3_1_item6: '所有通过该权限获取的数据仅在本地处理和存储，不会传输到任何地方',
+        privacy_section3_1_item7: '您可以随时在"系统偏好设置" > "安全性与隐私" > "隐私" > "辅助功能"中撤销此权限。撤销后，粘贴功能将无法使用，但您仍可查看剪贴板历史记录',
+        
+        privacy_section3_2_title: '3.2 无需网络连接',
+        privacy_section3_2_p1: '本应用完全离线运行，不需要互联网连接。应用不会：',
+        privacy_section3_2_item1: '向任何服务器发送数据',
+        privacy_section3_2_item2: '从互联网下载内容',
+        privacy_section3_2_item3: '与任何第三方服务通信',
+        
+        privacy_section4_title: '4. 数据使用',
+        privacy_section4_p: '由于我们不收集任何用户数据，因此不存在数据使用的问题。您在使用本应用时产生的所有数据：',
+        privacy_section4_item1: '仅保存在您的本地设备上',
+        privacy_section4_item2: '仅用于应用的功能运行',
+        privacy_section4_item3: '完全由您控制和管理',
+        privacy_section4_item4: '可以随时由您删除',
+        
+        privacy_section5_title: '5. 数据安全',
+        privacy_section5_p: '我们采取以下措施保护您的数据安全：',
+        privacy_section5_item1: '<strong>本地加密：</strong>所有保存在本地的剪贴板历史记录都经过加密处理',
+        privacy_section5_item2: '<strong>无网络传输：</strong>应用不连接互联网，因此不存在数据在传输过程中被截获的风险',
+        privacy_section5_item3: '<strong>无第三方访问：</strong>不使用任何第三方服务或 SDK，您的数据不会被第三方访问',
+        privacy_section5_item4: '<strong>沙盒保护：</strong>应用在 macOS 沙盒环境中运行，符合 Apple 的安全标准',
+        
+        privacy_section6_title: '6. 数据共享和披露',
+        privacy_section6_p1: '<strong>我们不会与任何第三方共享、出售、租赁或交换您的任何数据。</strong>',
+        privacy_section6_p2: '由于本应用不收集任何用户数据，因此不存在数据共享或披露的情况。您的所有数据始终保留在您的设备上，完全由您控制。',
+        
+        privacy_section7_title: '7. 第三方服务',
+        privacy_section7_p: '本应用不集成任何第三方服务、分析工具、广告网络或社交媒体插件。应用的运行完全独立，不依赖于任何外部服务。',
+        
+        privacy_section8_title: '8. 儿童隐私',
+        privacy_section8_p: '本应用适合所有年龄段的用户使用。由于我们不收集任何个人信息，因此不会有意识地收集 13 岁以下儿童的个人信息。家长和监护人可以放心让儿童使用本应用。',
+        
+        privacy_section9_title: '9. 数据保留和删除',
+        privacy_section9_1_title: '9.1 数据保留',
+        privacy_section9_1_item1: '剪贴板历史记录根据您在设置中指定的数量上限保存（20-2000条）',
+        privacy_section9_1_item2: '当达到上限时，最早的记录会被自动删除',
+        privacy_section9_1_item3: '所有数据仅存储在您的本地设备上',
+        
+        privacy_section9_2_title: '9.2 删除数据',
+        privacy_section9_2_p: '您可以随时删除应用保存的数据：',
+        privacy_section9_2_item1: '<strong>删除单条记录：</strong>在历史记录列表中删除特定项目',
+        privacy_section9_2_item2: '<strong>清空所有记录：</strong>在应用设置中使用"清空历史记录"功能',
+        privacy_section9_2_item3: '<strong>完全删除：</strong>卸载应用将自动删除所有本地存储的数据',
+        
+        privacy_section10_title: '10. 您的权利',
+        privacy_section10_p: '由于所有数据都存储在您的本地设备上，您拥有完全的控制权：',
+        privacy_section10_item1: '<strong>访问权：</strong>您可以随时查看保存的所有剪贴板历史记录',
+        privacy_section10_item2: '<strong>修改权：</strong>虽然应用主要用于查看历史记录，但您可以删除不需要的内容',
+        privacy_section10_item3: '<strong>删除权：</strong>您可以随时删除部分或全部历史记录',
+        privacy_section10_item4: '<strong>控制权：</strong>您可以通过系统设置撤销应用的辅助功能权限。撤销后，粘贴功能将无法使用，但您仍可查看剪贴板历史记录',
+        
+        privacy_section11_title: '11. 隐私政策的变更',
+        privacy_section11_p1: '我们可能会不时更新本隐私政策。如有重大变更，我们会通过应用内通知或应用更新说明告知您。建议您定期查看本页面以了解任何变更。',
+        privacy_section11_p2: '本隐私政策的最后更新日期显示在页面顶部。继续使用本应用即表示您接受更新后的隐私政策。',
+        
+        privacy_section12_title: '12. 国际用户',
+        privacy_section12_p: '由于本应用不收集或传输任何数据，因此不涉及跨境数据传输问题。无论您身在何处，您的数据始终保留在您的设备上。',
+        
+        privacy_section13_title: '13. 合规声明',
+        privacy_section13_p: '本应用的设计和运营遵守以下隐私和数据保护法规：',
+        privacy_section13_item1: '<strong>Apple App Store 审核指南：</strong>严格遵守 Apple 的隐私和安全要求',
+        privacy_section13_item2: '<strong>GDPR（通用数据保护条例）：</strong>虽然我们不收集数据，但我们的做法符合 GDPR 的隐私保护精神',
+        privacy_section13_item3: '<strong>CCPA（加州消费者隐私法案）：</strong>完全符合数据隐私要求',
+        
+        privacy_section14_title: '14. 联系我们',
+        privacy_section14_p1: '如果您对本隐私政策有任何疑问、意见或请求，请通过以下方式联系我们：',
+        privacy_section14_email: '<strong>电子邮件：</strong> smilejie2020@foxmail.com',
+        privacy_section14_support: '<strong>技术支持：</strong> <a href="support.html">访问技术支持页面</a>',
+        privacy_section14_p2: '我们会尽快回复您的查询，通常在 24-48 小时内。',
+        
+        privacy_section15_title: '15. 隐私政策摘要',
+        privacy_section15_intro: '<strong>简而言之，本应用对您的隐私的承诺是：</strong>',
+        privacy_section15_item1: '✅ <strong>零数据收集：</strong>我们不收集任何用户数据',
+        privacy_section15_item2: '✅ <strong>完全本地：</strong>所有数据仅保存在您的 Mac 上',
+        privacy_section15_item3: '✅ <strong>完全离线：</strong>应用不需要网络连接，不与任何服务器通信',
+        privacy_section15_item4: '✅ <strong>不共享数据：</strong>不与任何第三方共享数据',
+        privacy_section15_item5: '✅ <strong>本地加密：</strong>本地数据经过加密保护',
+        privacy_section15_item6: '✅ <strong>您拥有控制权：</strong>您可以随时查看、删除您的数据',
+        privacy_section15_item7: '✅ <strong>透明使用权限：</strong>辅助功能权限仅用于粘贴功能，按需申请，不做其他用途',
+        privacy_section15_note: '<strong>您的隐私是我们的首要任务。</strong>我们从设计之初就将隐私保护放在第一位，确保您的剪贴板内容永远不会离开您的设备。'
     }
 };
 
