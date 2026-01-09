@@ -70,10 +70,10 @@ const translations = {
         support_faq_title: 'Frequently Asked Questions',
         
         faq1_question: '❓ How do I start using Clipboard Safe?',
-        faq1_answer: 'After launching the app for the first time, the system will prompt you to grant Accessibility permissions. This is necessary to monitor the clipboard. Please go to System Preferences > Security & Privacy > Privacy > Accessibility and check Clipboard Safe.',
+        faq1_answer: 'Simply launch the app and start copying! Clipboard Safe will automatically save your copied content. No special permissions are needed for reading clipboard content. Accessibility permission is only requested when you try to paste content from the app.',
         
         faq2_question: '❓ Why do I need Accessibility permissions?',
-        faq2_answer: 'Clipboard Safe requires Accessibility permissions to monitor your copy operations (Command+C+C or Command+C) to automatically save clipboard content. This is a necessary permission for the app core functionality. Rest assured, we do not collect or upload any data; all content is saved only locally on your Mac.',
+        faq2_answer: 'Accessibility permission is only needed for pasting clipboard content to other apps. When you click on clipboard history to paste, the app writes the content to the system clipboard and simulates Command+V to paste it into the foreground app. This permission is requested on-demand when you try to paste. The app does not use accessibility to monitor keyboard events like Command+C.',
         
         faq3_question: '❓ How do I switch save modes?',
         faq3_answer: 'In the app settings, you can choose:',
@@ -99,7 +99,7 @@ const translations = {
         support_requirements_title: 'System Requirements',
         req_os: '<strong>Operating System:</strong> macOS 14.0 or higher',
         req_arch: '<strong>Architecture:</strong> Supports Intel and Apple Silicon (M1/M2/M3) chips',
-        req_permissions: '<strong>Permissions:</strong> Accessibility permissions',
+        req_permissions: '<strong>Permissions:</strong> Accessibility permissions (only for paste functionality)',
         req_disk: '<strong>Disk Space:</strong> Minimum 10 MB',
         
         support_contact_title: 'Contact Us',
@@ -118,12 +118,12 @@ const translations = {
         trouble1_step2: 'Try restarting your Mac',
         trouble1_step3: 'Download and reinstall the app',
         
-        trouble2_title: '🔧 Cannot save clipboard content',
+        trouble2_title: '🔧 Cannot paste clipboard content',
         trouble2_solution: '<strong>Solution:</strong>',
-        trouble2_step1: 'Check if Accessibility permissions have been granted',
+        trouble2_step1: 'Pasting requires Accessibility permissions. When you try to paste, the app will prompt you to enable this permission',
         trouble2_step2: 'Go to System Preferences > Security & Privacy > Privacy > Accessibility',
         trouble2_step3: 'Ensure Clipboard Safe is checked and enabled',
-        trouble2_step4: 'If already checked, try unchecking and rechecking',
+        trouble2_step4: 'If already checked, try unchecking and rechecking. Note: Clipboard content reading does not require accessibility permissions',
         
         trouble3_title: '�� Shortcuts not working',
         trouble3_solution: '<strong>Solution:</strong>',
@@ -321,10 +321,10 @@ const translations = {
         support_faq_title: '常见问题',
         
         faq1_question: '❓ 如何开始使用Clipboard Safe？',
-        faq1_answer: '首次启动应用后，系统会提示您授予辅助功能权限。这是监控剪贴板所必需的。请前往 系统偏好设置 > 安全性与隐私 > 隐私 > 辅助功能，并勾选Clipboard Safe。',
+        faq1_answer: '启动应用后即可开始使用！Clipboard Safe会自动保存您复制的内容。读取剪贴板内容不需要特殊权限。只有当您尝试从应用中粘贴内容时，才会请求辅助功能权限。',
         
         faq2_question: '❓ 为什么需要辅助功能权限？',
-        faq2_answer: 'Clipboard Safe需要辅助功能权限来监控您的复制操作（Command+C+C或Command+C），以便自动保存剪贴板内容。这是应用核心功能所必需的权限。请放心，我们不会收集或上传任何数据，所有内容仅保存在您的 Mac 本地。',
+        faq2_answer: '辅助功能权限仅在粘贴剪贴板内容到其他应用时需要。当您点击剪贴板历史记录粘贴时，应用会将内容写入系统剪贴板，并模拟 Command+V 将其粘贴到前台应用。该权限在您尝试粘贴时按需请求。应用不会使用辅助功能监听键盘事件（如 Command+C）。',
         
         faq3_question: '❓ 如何切换保存模式？',
         faq3_answer: '在应用设置中，您可以选择：',
@@ -350,7 +350,7 @@ const translations = {
         support_requirements_title: '系统要求',
         req_os: '<strong>操作系统：</strong>macOS 14.0 或更高版本',
         req_arch: '<strong>架构支持：</strong>支持 Intel 和 Apple Silicon (M1/M2/M3) 芯片',
-        req_permissions: '<strong>权限要求：</strong>辅助功能权限',
+        req_permissions: '<strong>权限要求：</strong>辅助功能权限（仅用于粘贴功能）',
         req_disk: '<strong>磁盘空间：</strong>最少 10 MB',
         
         support_contact_title: '联系我们',
@@ -369,12 +369,12 @@ const translations = {
         trouble1_step2: '尝试重启 Mac',
         trouble1_step3: '重新下载并安装应用',
         
-        trouble2_title: '🔧 无法保存剪贴板内容',
+        trouble2_title: '🔧 无法粘贴剪贴板内容',
         trouble2_solution: '<strong>解决方案：</strong>',
-        trouble2_step1: '检查是否已授予辅助功能权限',
+        trouble2_step1: '粘贴功能需要辅助功能权限。当您尝试粘贴时，应用会提示您开启该权限',
         trouble2_step2: '前往 系统偏好设置 > 安全性与隐私 > 隐私 > 辅助功能',
         trouble2_step3: '确保Clipboard Safe已勾选并启用',
-        trouble2_step4: '如已勾选，尝试取消勾选后重新勾选',
+        trouble2_step4: '如已勾选，尝试取消勾选后重新勾选。注意：读取剪贴板内容不需要辅助功能权限',
         
         trouble3_title: '🔧 快捷键不工作',
         trouble3_solution: '<strong>解决方案：</strong>',
