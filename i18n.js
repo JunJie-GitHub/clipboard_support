@@ -26,10 +26,10 @@ const translations = {
         feature2_desc1: 'One-click quick access to history',
         feature2_desc2: 'Smart search to quickly find what you need',
         
-        feature3_title: 'Multiple Copy Trigger Modes',
-        feature3_desc1: 'Support Command+C automatic save',
-        feature3_desc2: 'Or use Command+C+C for manual save',
-        feature3_desc3: 'Meet different user habits',
+        feature3_title: 'Quick Access',
+        feature3_desc1: 'Default shortcut Command+V to open clipboard panel',
+        feature3_desc2: 'One-click paste to any application',
+        feature3_desc3: 'Customizable shortcut to fit your workflow',
         
         feature4_title: 'Adjustable History Limit',
         feature4_desc1: 'Set the number of saved items according to your needs',
@@ -272,10 +272,10 @@ const translations = {
         feature2_desc1: '一键快速访问历史记录',
         feature2_desc2: '智能搜索功能，快速找到你需要的内容',
         
-        feature3_title: '多种复制触发方式',
-        feature3_desc1: '支持 Command+C 自动保存',
-        feature3_desc2: '或使用 Command+C+C 主动保存',
-        feature3_desc3: '满足用户的不同使用习惯',
+        feature3_title: '快捷访问',
+        feature3_desc1: '默认通过 Command+V 快速呼出剪贴板面板',
+        feature3_desc2: '一键粘贴内容到任意应用',
+        feature3_desc3: '支持自定义快捷键，适应你的工作习惯',
         
         feature4_title: '历史记录上限可调',
         feature4_desc1: '根据你的需求设置保存数量',
