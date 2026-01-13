@@ -149,6 +149,51 @@ body {
     flex-wrap: wrap;
 }
 
+/* Mac App Store Badge */
+.appstore-badge {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    line-height: 0;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.appstore-badge:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0 14px 28px rgba(0, 0, 0, 0.28));
+}
+
+.appstore-badge:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.65);
+    outline-offset: 4px;
+}
+
+.appstore-badge__img {
+    /* Match the visual height of .btn (padding + line-height) */
+    height: 54px;
+    width: auto;
+    display: block;
+}
+
+@media (max-width: 480px) {
+    .appstore-badge__img {
+        height: 48px;
+    }
+}
+
+/* Default to English; switch to Chinese when i18n sets lang=zh-CN */
+.appstore-badge__img--zh {
+    display: none;
+}
+
+html[lang="zh-CN"] .appstore-badge__img--en {
+    display: none;
+}
+
+html[lang="zh-CN"] .appstore-badge__img--zh {
+    display: block;
+}
+
 /* Buttons */
 .btn {
     display: inline-block;

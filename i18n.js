@@ -15,6 +15,8 @@ const translations = {
         hero_description: 'Make your copy-paste workflow more efficient and convenient',
         btn_learn_more: 'Learn More',
         btn_get_support: 'Get Support',
+        appstore_badge_small: 'Download on the',
+        appstore_badge_big: 'Mac App Store',
         
         // Features section
         section_features: 'Core Features',
@@ -261,6 +263,8 @@ const translations = {
         hero_description: '让你的复制粘贴工作流更高效、更便捷',
         btn_learn_more: '了解更多',
         btn_get_support: '获取支持',
+        appstore_badge_small: '下载于',
+        appstore_badge_big: 'Mac App Store',
         
         // Features section
         section_features: '核心功能',
