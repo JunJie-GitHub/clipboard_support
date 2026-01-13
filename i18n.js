@@ -60,7 +60,7 @@ const translations = {
         btn_learn_privacy: 'Learn About Privacy Policy',
         
         // Footer
-        footer_copyright: '© 2025 Clipboard Safe. All rights reserved.',
+        footer_copyright: '© 2026 Clipboard Safe. All rights reserved.',
         
         // Support page
         page_title_support: 'Technical Support - Clipboard Safe',
@@ -306,7 +306,7 @@ const translations = {
         btn_learn_privacy: '了解隐私政策',
         
         // Footer
-        footer_copyright: '© 2025 Clipboard Safe. 保留所有权利.',
+        footer_copyright: '© 2026 Clipboard Safe. 保留所有权利.',
         
         // Support page
         page_title_support: '技术支持 - Clipboard Safe',
