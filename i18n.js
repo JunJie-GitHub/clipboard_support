@@ -273,8 +273,8 @@ const translations = {
         feature2_desc2: '智能搜索功能，快速找到你需要的内容',
         
         feature3_title: '快捷访问',
-        feature3_desc1: '默认通过 Command+V 快速呼出剪贴板面板',
-        feature3_desc2: '一键粘贴内容到任意应用',
+        feature3_desc1: '默认通过 Option+V 快速呼出剪贴板面板',
+        feature3_desc2: '一键复制内容，你可以粘贴内容到任意应用',
         feature3_desc3: '支持自定义快捷键，适应你的工作习惯',
         
         feature4_title: '历史记录上限可调',
