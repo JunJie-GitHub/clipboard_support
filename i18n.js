@@ -134,7 +134,7 @@ const translations = {
         // Privacy page
         page_title_privacy: 'Privacy Policy - Clipboard Safe',
         page_header_privacy: 'Privacy Policy',
-        privacy_update_date: 'Last updated: January 9, 2026',
+        privacy_update_date: 'Last updated: January 13, 2026',
         
         // Privacy sections
         privacy_section1_title: '1. Introduction',
@@ -380,7 +380,7 @@ const translations = {
         // Privacy page
         page_title_privacy: '隐私政策 - Clipboard Safe',
         page_header_privacy: '隐私政策',
-        privacy_update_date: '最后更新日期：2026年1月9日',
+        privacy_update_date: '最后更新日期：2026年1月13日',
         
         // Privacy sections
         privacy_section1_title: '1. 引言',
