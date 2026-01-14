@@ -87,6 +87,37 @@ body {
     margin-left: auto;
 }
 
+.language-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.lang-link {
+    padding: 0.4rem 0.8rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.lang-link:hover {
+    color: var(--primary-color);
+    background-color: var(--bg-light);
+}
+
+.lang-link.active {
+    color: var(--primary-color);
+    background-color: var(--bg-light);
+}
+
+.lang-separator {
+    color: var(--border-color);
+    margin: 0 0.2rem;
+}
+
 .language-select {
     padding: 0.5rem 1rem;
     border: 2px solid var(--border-color);

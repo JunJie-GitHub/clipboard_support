@@ -500,14 +500,38 @@ const translations = {
     }
 };
 
-// Get current language from localStorage or default to English
+// Get current language from URL path
 function getCurrentLanguage() {
-    return localStorage.getItem('language') || 'en';
+    const pathname = window.location.pathname;
+    // Check if pathname starts with /zh/
+    if (pathname.startsWith('/zh/') || pathname === '/zh') {
+        return 'zh';
+    }
+    return 'en';
 }
 
-// Set language in localStorage
+// Change language by redirecting to appropriate path
 function setLanguage(lang) {
-    localStorage.setItem('language', lang);
+    let pathname = window.location.pathname;
+    let newPath;
+    
+    // Remove /en/ or /zh/ prefix if it exists
+    pathname = pathname.replace(/^\/(en|zh)\//, '/').replace(/^\/(en|zh)$/, '/');
+    
+    // Ensure pathname starts with /
+    if (!pathname.startsWith('/')) {
+        pathname = '/' + pathname;
+    }
+    
+    // Build new path based on language
+    if (lang === 'zh') {
+        newPath = '/zh' + pathname;
+    } else {
+        newPath = pathname;
+    }
+    
+    // Redirect to new path
+    window.location.href = newPath + window.location.search + window.location.hash;
 }
 
 // Get translation for a key
@@ -533,34 +557,31 @@ function updatePageLanguage() {
     // Update html lang attribute
     document.documentElement.lang = getCurrentLanguage() === 'zh' ? 'zh-CN' : 'en';
     
-    // Update language selector
-    const languageSelect = document.getElementById('language-select');
-    if (languageSelect) {
-        languageSelect.value = getCurrentLanguage();
+    // Update active language link
+    const langLinks = document.querySelectorAll('.lang-link');
+    langLinks.forEach(link => {
+        link.classList.remove('active');
+    });
+    const currentLang = getCurrentLanguage();
+    const activeLangLink = document.getElementById(`lang-${currentLang}`);
+    if (activeLangLink) {
+        activeLangLink.classList.add('active');
     }
 }
 
 // Initialize i18n on page load
 document.addEventListener('DOMContentLoaded', function() {
-    // Create language selector if it doesn't exist
-    const navbar = document.querySelector('.navbar .container');
-    if (navbar && !document.getElementById('language-select')) {
-        const langSwitcher = document.createElement('div');
-        langSwitcher.className = 'language-switcher';
+    // Update language links in existing language-switcher div
+    const langSwitcher = document.querySelector('.language-switcher');
+    if (langSwitcher) {
+        const currentLang = getCurrentLanguage();
         langSwitcher.innerHTML = `
-            <select id="language-select" class="language-select">
-                <option value="en">English</option>
-                <option value="zh">中文</option>
-            </select>
+            <div class="language-links">
+                <a href="/" id="lang-en" class="lang-link ${currentLang === 'en' ? 'active' : ''}">English</a>
+                <span class="lang-separator">|</span>
+                <a href="/zh/" id="lang-zh" class="lang-link ${currentLang === 'zh' ? 'active' : ''}">中文</a>
+            </div>
         `;
-        navbar.appendChild(langSwitcher);
-        
-        // Add event listener for language change
-        const languageSelect = document.getElementById('language-select');
-        languageSelect.addEventListener('change', function() {
-            setLanguage(this.value);
-            updatePageLanguage();
-        });
     }
     
     // Set initial language and update page
