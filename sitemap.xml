@@ -50,6 +50,26 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://clipboardsafe.com/zh/index.html"/>
   </url>
 
+  <!-- English Changelog Page -->
+  <url>
+    <loc>https://clipboardsafe.com/changelog.html</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clipboardsafe.com/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clipboardsafe.com/zh/changelog.html"/>
+  </url>
+
+  <!-- Chinese Changelog Page -->
+  <url>
+    <loc>https://clipboardsafe.com/zh/changelog.html</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://clipboardsafe.com/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://clipboardsafe.com/zh/changelog.html"/>
+  </url>
+
   <!-- English Support Page -->
   <url>
     <loc>https://clipboardsafe.com/support.html</loc>

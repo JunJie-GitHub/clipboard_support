@@ -407,7 +407,12 @@ html[lang="zh-CN"] .appstore-badge__img--zh {
     margin-top: 0.5rem;
 }
 
-/* Support Content */
+/* Content Section */
+.content-section {
+    padding: 3rem 0;
+}
+
+/* Support Content -->
 .support-content {
     padding: 4rem 0;
     background-color: var(--bg-white);
@@ -781,5 +786,117 @@ html[lang="zh-CN"] .appstore-badge__img--zh {
 
     .nav-brand h1 {
         font-size: 1.2rem;
+    }
+}
+
+/* Changelog Styles */
+.changelog-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.version-block {
+    background: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+    transition: box-shadow 0.3s ease;
+}
+
+.version-block:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.version-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--bg-light);
+}
+
+.version-number {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.version-date {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.version-badge {
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.version-badge-latest {
+    background: linear-gradient(135deg, var(--success-color), #28a745);
+    color: white;
+    box-shadow: 0 2px 8px rgba(52, 199, 89, 0.3);
+}
+
+.changelog-section {
+    margin-bottom: 1.5rem;
+}
+
+.changelog-section:last-child {
+    margin-bottom: 0;
+}
+
+.changelog-category {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.changelog-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.changelog-list li {
+    padding: 0.5rem 0 0.5rem 2rem;
+    position: relative;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.changelog-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0.75rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .version-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .version-block {
+        padding: 1.5rem;
+    }
+    
+    .changelog-list li {
+        padding-left: 1.5rem;
     }
 }

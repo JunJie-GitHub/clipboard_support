@@ -5,11 +5,13 @@ const translations = {
     en: {
         // Navigation
         nav_home: 'Home',
+        nav_changelog: 'Changelog',
         nav_support: 'Support',
         nav_privacy: 'Privacy Policy',
         
         // Index page
         page_title_home: 'Clipboard Safe - Intelligent Clipboard Manager',
+        page_title_changelog: 'Changelog - Clipboard Safe',
         hero_title: 'Clipboard Safe',
         hero_subtitle: 'Intelligent Clipboard Manager for Mac',
         hero_description: 'Make your copy-paste workflow more efficient and convenient',
@@ -248,16 +250,23 @@ const translations = {
         privacy_section15_item5: '✔ <strong>Local Encryption:</strong> Local data is encrypted for protection',
         privacy_section15_item6: '✔ <strong>You Have Control:</strong> You can view and delete your data at any time',
         privacy_section15_item7: '✔ <strong>Transparent Permission Use:</strong> Accessibility permission is only used for paste functionality, requested on-demand, not used for other purposes',
-        privacy_section15_note: '<strong>Your privacy is our top priority.</strong> We have prioritized privacy protection from the very beginning, ensuring that your clipboard content never leaves your device.'
+        privacy_section15_note: '<strong>Your privacy is our top priority.</strong> We have prioritized privacy protection from the very beginning, ensuring that your clipboard content never leaves your device.',
+        
+        // Changelog page
+        page_title_changelog: 'Changelog - Clipboard Safe',
+        changelog_title: 'Changelog',
+        changelog_subtitle: 'Track all updates and improvements to Clipboard Safe'
     },
     zh: {
         // Navigation
         nav_home: '首页',
+        nav_changelog: '更新日志',
         nav_support: '技术支持',
         nav_privacy: '隐私政策',
         
         // Index page
         page_title_home: 'Clipboard Safe - 智能剪贴板管理工具',
+        page_title_changelog: '更新日志 - Clipboard Safe',
         hero_title: 'Clipboard Safe',
         hero_subtitle: '为 Mac 打造的智能剪贴板管理工具',
         hero_description: '让你的复制粘贴工作流更高效、更便捷',
@@ -496,7 +505,12 @@ const translations = {
         privacy_section15_item5: '✔ <strong>本地加密：</strong>本地数据经过加密保护',
         privacy_section15_item6: '✔ <strong>您拥有控制权：</strong>您可以随时查看、删除您的数据',
         privacy_section15_item7: '✔ <strong>透明使用权限：</strong>辅助功能权限仅用于粘贴功能，按需申请，不做其他用途',
-        privacy_section15_note: '<strong>您的隐私是我们的首要任务。</strong>我们从设计之初就将隐私保护放在第一位，确保您的剪贴板内容永远不会离开您的设备。'
+        privacy_section15_note: '<strong>您的隐私是我们的首要任务。</strong>我们从设计之初就将隐私保护放在第一位，确保您的剪贴板内容永远不会离开您的设备。',
+        
+        // Changelog page
+        page_title_changelog: '更新日志 - Clipboard Safe',
+        changelog_title: '更新日志',
+        changelog_subtitle: '追踪 Clipboard Safe 的所有更新和改进'
     }
 };
 
