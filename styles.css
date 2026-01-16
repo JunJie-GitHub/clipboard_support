@@ -412,15 +412,14 @@ html[lang="zh-CN"] .appstore-badge__img--zh {
     padding: 3rem 0;
 }
 
-/* Support Content -->
+/* Support Content */
 .support-content {
     padding: 4rem 0;
     background-color: var(--bg-white);
 }
 
 .support-section {
-    max-width: 900px;
-    margin: 0 auto 4rem;
+    margin-bottom: 4rem;
 }
 
 .support-section h2 {
@@ -766,6 +765,12 @@ html[lang="zh-CN"] .appstore-badge__img--zh {
 
     .help-links {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .help-link {
+        width: 100%;
+        max-width: 250px;
     }
 }
 

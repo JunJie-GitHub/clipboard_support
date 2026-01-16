@@ -529,19 +529,14 @@ function setLanguage(lang) {
     let pathname = window.location.pathname;
     let newPath;
     
-    // Remove /en/ or /zh/ prefix if it exists
-    pathname = pathname.replace(/^\/(en|zh)\//, '/').replace(/^\/(en|zh)$/, '/');
-    
-    // Ensure pathname starts with /
-    if (!pathname.startsWith('/')) {
-        pathname = '/' + pathname;
-    }
+    // Extract the file name (keep everything after the last /)
+    let fileName = pathname.split('/').pop() || 'index.html';
     
     // Build new path based on language
     if (lang === 'zh') {
-        newPath = '/zh' + pathname;
+        newPath = '/zh/' + fileName;
     } else {
-        newPath = pathname;
+        newPath = '/' + fileName;
     }
     
     // Redirect to new path
@@ -591,9 +586,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const currentLang = getCurrentLanguage();
         langSwitcher.innerHTML = `
             <div class="language-links">
-                <a href="/" id="lang-en" class="lang-link ${currentLang === 'en' ? 'active' : ''}">English</a>
+                <a href="javascript:void(0);" onclick="setLanguage('en')" id="lang-en" class="lang-link ${currentLang === 'en' ? 'active' : ''}">English</a>
                 <span class="lang-separator">|</span>
-                <a href="/zh/" id="lang-zh" class="lang-link ${currentLang === 'zh' ? 'active' : ''}">中文</a>
+                <a href="javascript:void(0);" onclick="setLanguage('zh')" id="lang-zh" class="lang-link ${currentLang === 'zh' ? 'active' : ''}">中文</a>
             </div>
         `;
     }
