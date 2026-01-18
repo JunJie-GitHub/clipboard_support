@@ -5,17 +5,12 @@ User-agent: *
 Allow: /
 Disallow: 
 
-# Optimize crawl speed and efficiency
-Crawl-delay: 1
-Request-rate: 30/1m
-
 # Sitemap location
 Sitemap: https://clipboardsafe.com/sitemap.xml
 
 # Google-specific crawlers
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
 
 # Bing-specific crawlers
 User-agent: Bingbot
