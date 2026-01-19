@@ -30,26 +30,6 @@
     </image:image>
   </url>
 
-  <!-- English Index Page -->
-  <url>
-    <loc>https://clipboardsafe.com/index.html</loc>
-    <lastmod>2026-01-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://clipboardsafe.com/index.html"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://clipboardsafe.com/zh/index.html"/>
-  </url>
-
-  <!-- Chinese Index Page -->
-  <url>
-    <loc>https://clipboardsafe.com/zh/index.html</loc>
-    <lastmod>2026-01-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://clipboardsafe.com/index.html"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://clipboardsafe.com/zh/index.html"/>
-  </url>
-
   <!-- English Changelog Page -->
   <url>
     <loc>https://clipboardsafe.com/changelog.html</loc>

@@ -1,36 +1,10 @@
 # robots.txt for clipboardsafe.com
-# Allow all search engine crawlers with optimization rules
 
 User-agent: *
 Allow: /
-Disallow: 
 
-# Sitemap location
 Sitemap: https://clipboardsafe.com/sitemap.xml
 
-# Google-specific crawlers
-User-agent: Googlebot
-Allow: /
-
-# Bing-specific crawlers
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
-
-# Specific rules for search engine optimization
-User-agent: *
-Allow: /index.html
-Allow: /privacy.html
-Allow: /support.html
-Allow: /styles.css
-Allow: /i18n.js
-Allow: /manifest.json
-Allow: /statics/
-
-# Block specific paths if needed (examples)
-# Disallow: /admin/
-# Disallow: /private/
-# Disallow: /*.pdf$
-
-# Parameters to ignore
-# Clean-param: utm_source&utm_medium&utm_campaign
