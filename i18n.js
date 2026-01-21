@@ -555,12 +555,13 @@ function updatePageLanguage() {
     elements.forEach(element => {
         const key = element.getAttribute('data-i18n');
         const translation = t(key);
-        
+
+        // Keep SEO-critical tags static; only translate visible content.
         if (element.tagName === 'TITLE' || element.tagName === 'META') {
-            element.textContent = translation;
-        } else {
-            element.innerHTML = translation;
+            return;
         }
+
+        element.innerHTML = translation;
     });
     
     // Update html lang attribute
