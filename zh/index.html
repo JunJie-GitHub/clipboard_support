@@ -32,73 +32,70 @@
     <meta name="twitter:image" content="https://clipboardsafe.com/statics/og-image.png">
     <!-- Favicon -->
     <link rel="apple-touch-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico">
     <link rel="manifest" href="/manifest.json">
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Clipboard Safe",
-      "alternateName": "为 Mac 打造的智能剪贴板管理工具",
-      "description": "为 Mac 打造的智能剪贴板管理工具，采用隐私第一的设计。自动保存、搜索和管理剪贴板历史记录。",
-      "url": "https://clipboardsafe.com",
-      "image": "https://clipboardsafe.com/statics/og-image.png",
-      "author": {
-        "@type": "Organization",
-        "name": "Clipboard Safe",
-        "url": "https://clipboardsafe.com",
-        "email": "smilejie2020@foxmail.com"
-      },
-      "applicationCategory": "ProductivityApplication",
-      "operatingSystem": "macOS",
-      "softwareVersion": "1.0",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD",
-        "url": "https://apps.apple.com/cn/app/clipboard-safe/id6755882347?mt=12"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.5",
-        "ratingCount": "50"
-      },
-      "availableOnDevice": ["Mac"],
-      "featureList": [
-        "自动剪贴板管理",
-        "快速搜索",
-        "快捷键快速访问",
-        "可调整历史记录限制",
-        "隐私保护",
-        "本地加密"
-      ],
-      "sameAs": [
-        "https://github.com/JunJie-GitHub/clipboard_support",
-        "https://apps.apple.com/cn/app/clipboard-safe/id6755882347?mt=12"
-      ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://clipboardsafe.com/#app",
+  "name": "Clipboard Safe",
+  "alternateName": "Clipboard Safe - Intelligent Clipboard Manager",
+  "description": "An intelligent clipboard manager for Mac with privacy-first design. Automatically save, search, and manage clipboard history locally.",
+  "url": "https://clipboardsafe.com",
+  "image": "https://clipboardsafe.com/statics/app-icon.png",
+  "operatingSystem": "macOS",
+  "applicationCategory": "ProductivityApplication",
+  "softwareVersion": "1.0",
+  "downloadUrl": "https://apps.apple.com/cn/app/clipboard-safe/id6755882347?mt=12",
+
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://clipboardsafe.com/#org",
+    "name": "Clipboard Safe",
+    "url": "https://clipboardsafe.com"
+  },
+
+  "offers": {
+    "@type": "Offer",
+    "url": "https://apps.apple.com/cn/app/clipboard-safe/id6755882347?mt=12",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock"
+  },
+
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "ratingCount": "50",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+
+  "review": {
+    "@type": "Review",
+    "author": {
       "@type": "Organization",
-      "name": "Clipboard Safe",
-      "url": "https://clipboardsafe.com",
-      "logo": "https://clipboardsafe.com/favicon.ico",
-      "email": "smilejie2020@foxmail.com",
-      "description": "隐私第一的 Mac 剪贴板管理工具",
-      "sameAs": [
-        "https://github.com/JunJie-GitHub/clipboard_support",
-        "https://apps.apple.com/cn/app/clipboard-safe/id6755882347?mt=12"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "技术支持",
-        "email": "smilejie2020@foxmail.com"
-      }
+      "name": "Apple App Store"
     }
-    </script>
+  },
+
+  "featureList": [
+    "Automatic Clipboard Management",
+    "Quick Search",
+    "Quick Access with Shortcuts",
+    "Adjustable History Limit",
+    "Privacy Protection",
+    "Local Encryption"
+  ],
+
+  "sameAs": [
+    "https://github.com/JunJie-GitHub/clipboard_support",
+    "https://apps.apple.com/cn/app/clipboard-safe/id6755882347?mt=12"
+  ]
+}
+</script>
 </head>
 <body>
     <nav class="navbar">

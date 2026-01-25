@@ -11,25 +11,12 @@
   "icons": [
     {
       "src": "/favicon.ico",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "/favicon.ico",
       "sizes": "180x180",
-      "type": "image/png",
+      "type": "image/ico",
       "purpose": "any"
     }
   ],
   "categories": ["productivity", "utilities"],
-  "screenshots": [
-    {
-      "src": "/statics/screenshot-1.png",
-      "sizes": "540x720",
-      "type": "image/png"
-    }
-  ],
   "shortcuts": [
     {
       "name": "Open Clipboard History",
